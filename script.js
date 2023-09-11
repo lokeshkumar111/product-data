@@ -108,14 +108,59 @@ function displayProducts(data) {
 
         const img1 = document.createElement("img");
         img1.src = product.images[0];
+        img1.addEventListener("click", () => {
+            mainImage.src = product.images[0];
+            img1.style.border='2px solid black';
+            img2.style.border='none';
+            img3.style.border='none';
+            img4.style.border='none';
+            img5.style.border='none';
+        });
+
         const img2 = document.createElement("img");
         img2.src = product.images[1];
+        img2.addEventListener("click", () => {
+            mainImage.src = product.images[1];
+            img2.style.border='2px solid black';
+            img1.style.border='none';
+            img3.style.border='none';
+            img4.style.border='none';
+            img5.style.border='none';
+        });
+
         const img3 = document.createElement("img");
         img3.src = product.images[2];
+        img3.addEventListener("click", () => {
+            mainImage.src = product.images[2];
+            img3.style.border='2px solid black';
+            img2.style.border='none';
+            img1.style.border='none';
+            img4.style.border='none';
+            img5.style.border='none';
+        });
+
         const img4 = document.createElement("img");
         img4.src = product.images[3];
+        img4.addEventListener("click", () => {
+            mainImage.src = product.images[3];
+            img4.style.border='2px solid black';
+            img2.style.border='none';
+            img3.style.border='none';
+            img1.style.border='none';
+            img5.style.border='none';
+        });
+
         const img5 = document.createElement("img");
         img5.src = product.images[4];
+        img5.addEventListener("click", () => {
+            mainImage.src = product.images[4];
+            img5.style.border='2px solid black';
+            img2.style.border='none';
+            img3.style.border='none';
+            img4.style.border='none';
+            img1.style.border='none';
+        });
+
         imgDiv.append(img1, img2, img3, img4, img5);
 
         otherDiv.appendChild(imgDiv);

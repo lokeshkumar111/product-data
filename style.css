@@ -64,12 +64,16 @@
     margin: 0 auto;
     padding: 5px 10px 5px 10px;
     text-align: center;
-    background: red;
-    border: none;
+    background: white;
+    border: 1px solid grey;
     border-radius: 5px;
     margin-bottom: 10px;
     letter-spacing: 1px;
     margin-top: 5px;
+}
+.product-description>button:hover{
+    background: rgba(255, 0, 0, 0.61);
+    border:none;
 }
 
 
@@ -121,6 +125,7 @@ border-radius: 5px;
     letter-spacing: .5px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
+
 .clearCatBtn{
     margin: auto;
     display: block;
